@@ -38,8 +38,8 @@ if(isNaN(vida))
   alert('valor de vida incorrecto, por favor ingrese un valor de vida valido');
 } 
 else {
-  if(vida < 1){
-    alert('valor de vida incorrecto, por favor ingrese un valor de vida mayor que cero');
+  if(vida < 0){
+    alert('valor de vida incorrecto, por favor ingrese un valor de vida mayor o igual a cero');
   }
   else {
     if(vida > 100){
@@ -66,9 +66,9 @@ else {
 }
 
 /*challenge 21-B*/
-if(isNaN(vida) || vida < 1 || vida > 100)
+if(isNaN(vida) || vida < 0 || vida > 100)
 {
-  alert('valor de vida incorrecto, por favor ingrese un valor de vida valido, un numero mayor a cero y menor o igual a 100');
+  alert('valor de vida incorrecto, por favor ingrese un valor de vida valido, un numero mayor o igual a cero y menor o igual a 100');
 } 
 else {
   document.write('<br/>Challenge 21 - B <br/>');
